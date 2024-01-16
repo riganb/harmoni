@@ -29,11 +29,12 @@ export default function TabLayout() {
       <View className="flex-1">
         <Slot />
       </View>
-      <View className="flex flex-row h-fit bg-purple-100 mx-2 rounded-full">
+      <View className="flex flex-row h-fit bg-purple-100 mx-2 rounded-full px-1 border-2 border-purple-300">
         {TAB_ROUTES.map((tab_route) => {
           return (
             <Pressable
               className="flex-1 flex items-center justify-center py-4"
+              key={tab_route}
               onPress={goToSegment(tab_route)}
             >
               <Text

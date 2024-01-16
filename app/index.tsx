@@ -5,7 +5,7 @@ import { Button, Text } from "react-native-paper";
 
 export default function App() {
   useEffect(() => {
-    setTimeout(() => router.push("/tabs/home"), 5000);
+    setTimeout(() => router.push("/tabs/home"), 1000);
   });
   return (
     <View className="flex-1 justify-center items-center">

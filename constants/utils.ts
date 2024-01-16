@@ -1,0 +1,1 @@
+export const DOCTOR_CARDS_BORDER_COLOURS = ["border-yellow-500", "border-red-500", "border-green-500", "border-purple-500"]

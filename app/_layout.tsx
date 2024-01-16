@@ -5,10 +5,10 @@ import { SafeAreaView, StatusBar } from "react-native";
 
 export default function RootLayout() {
   return (
-    <SafeAreaProvider className="flex-1">
+    <SafeAreaProvider className="flex-1 bg-black">
       <PaperProvider>
         <SafeAreaView
-          className="flex-1"
+          className="flex-1 bg-white"
           style={{
             marginTop: StatusBar.currentHeight,
           }}
