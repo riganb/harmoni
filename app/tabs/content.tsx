@@ -52,7 +52,7 @@ export default function App() {
       <View className="flex-1 w-full items-center justify-center mt-2">
         <ScrollView className="w-full">
           {CONTENT_PIECES.map((contentPiece) => (
-            <ContentCard contentPiece={contentPiece} />
+            <ContentCard contentPiece={contentPiece} key={contentPiece.title} />
           ))}
         </ScrollView>
       </View>
