@@ -20,8 +20,10 @@ const ContentCard = ({ contentPiece }: { contentPiece: ContentPiece }) => {
           source={home_card_artifact}
           className="flex-1 aspect-square m-2"
         />
-        <Text variant="headlineMedium">{contentPiece.title}</Text>
-        <Text variant="bodySmall">
+        <Text variant="headlineMedium" className="text-black">
+          {contentPiece.title}
+        </Text>
+        <Text variant="bodySmall" className="text-black">
           {isOpen ? contentPiece.longText : contentPiece.shortText}
         </Text>
         <Pressable onPress={switchState} className="mt-2">
